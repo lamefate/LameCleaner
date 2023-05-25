@@ -19,6 +19,10 @@ public class IntroScreen : AppCompatActivity() {
 	
 	fun runAnimation()
 	{
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 9938106 (update)
 		val imageView: ImageView = findViewById(R.id.intro_view)
 		Glide.with(this).asGif().load(R.raw.intro).into(imageView)
 		

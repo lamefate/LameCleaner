@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Lame Cleaner</string>
+<<<<<<< HEAD
+=======
+	<string name="git_about">developed by lamefate</string>
+>>>>>>> 9938106 (update)
 </resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- ANYDPI -->
+	<dimen name="anyIntroSize">128px</dimen>
+	<dimen name="anyMainImageSize">128px</dimen>
+	<dimen name="anyGithubImageSize">64px</dimen>
+	<dimen name="anyWelcomeText">10sp</dimen>
+	<dimen name="anyAboutText">9sp</dimen>
+	
+	<!-- LDPI -->
+	<dimen name="ldpiIntroSize">64px</dimen>
+	<dimen name="ldpiMainImageSize">64px</dimen>
+	<dimen name="ldpiGithubImageSize">32px</dimen>
+	<dimen name="ldpiWelcomeText">8sp</dimen>
+	<dimen name="ldpiAboutText">7sp</dimen>
+	
+	<!-- MDPI -->
+	<dimen name="mdpiIntroSize">128px</dimen>
+	<dimen name="mdpiMainImageSize">128px</dimen>
+	<dimen name="mdpiGithubImageSize">64px</dimen>
+	<dimen name="mdpiWelcomeText">10sp</dimen>
+	<dimen name="mdpiAboutText">9sp</dimen>
+	
+	<!-- HDPI -->
+	<dimen name="hdpiIntroSize">192px</dimen>
+	<dimen name="hdpiMainImageSize">192px</dimen>
+	<dimen name="hdpiGithubImageSize">128px</dimen>
+	<dimen name="hdpiWelcomeText">12sp</dimen>
+	<dimen name="hdpiAboutText">11sp</dimen>
+	
+	<!-- XHDPI -->
+	<dimen name="xhdpiIntroSize">256px</dimen>
+	<dimen name="xhdpiMainImageSize">256px</dimen>
+	<dimen name="xhdpiGithubImageSize">192px</dimen>
+	<dimen name="xhdpiWelcomeText">14sp</dimen>
+	<dimen name="xhdpiAboutText">13sp</dimen>
+	
+	<!-- XXHDPI -->
+	<dimen name="xxhdpiIntroSize">320px</dimen>
+	<dimen name="xxhdpiMainImageSize">320px</dimen>
+	<dimen name="xxhdpiGithubImageSize">256px</dimen>
+	<dimen name="xxhdpiWelcomeText">16sp</dimen>
+	<dimen name="xxhdpiAboutText">15sp</dimen>
+	
+	<!-- XXXHDPI -->
+	<dimen name="xxxhdpiIntroSize">384px</dimen>
+	<dimen name="xxxhdpiMainImageSize">384px</dimen>
+	<dimen name="xxxhdpiGithubImageSize">320px</dimen>
+	<dimen name="xxxhdpiWelcomeText">18sp</dimen>
+	<dimen name="xxxhdpiAboutText">17sp</dimen>
+	
+</resources>
