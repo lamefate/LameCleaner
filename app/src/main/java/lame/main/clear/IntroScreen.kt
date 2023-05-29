@@ -21,12 +21,15 @@ public class IntroScreen : AppCompatActivity() {
 	{
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		
 >>>>>>> 9938106 (update)
 =======
 		
 >>>>>>> bb05e2e (update)
+=======
+>>>>>>> f4ba5a5 (update)
 		val imageView: ImageView = findViewById(R.id.intro_view)
 		Glide.with(this).asGif().load(R.raw.intro).into(imageView)
 		

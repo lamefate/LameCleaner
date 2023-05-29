@@ -12,9 +12,14 @@ import android.os.Environment
 import android.widget.Button
 import android.widget.Toast
 import android.os.Bundle
+<<<<<<< HEAD
 import android.os.Build
 import android.Manifest
 import android.net.Uri
+=======
+import android.net.Uri
+import java.nio.file.Path
+>>>>>>> f4ba5a5 (update)
 import java.io.File
 
 public class MainActivity : AppCompatActivity() {
@@ -23,6 +28,7 @@ public class MainActivity : AppCompatActivity() {
          super.onCreate(savedInstanceState)
          setContentView(R.layout.activity_main)
 		 
+<<<<<<< HEAD
 		 AppPermissions(this,this).hasPermissions()
 		 githubHandler()
 		 
@@ -34,10 +40,17 @@ public class MainActivity : AppCompatActivity() {
 				clearDirs(paths)
 			}
 		 }
+=======
+		 githubHandler()
+		 clearHandler()
+		 settingsHandler()
+		 AppPermissions(this,this).hasPermissions()
+>>>>>>> f4ba5a5 (update)
     }
 	
 	fun clearDirs(paths: MutableList<String>) {
 		if (paths.size >= 1) {
+<<<<<<< HEAD
 			for (path in paths) {
 				val currentPath = File(path)
 				if (currentPath.canWrite() && currentPath.canExecute()) {
@@ -45,6 +58,12 @@ public class MainActivity : AppCompatActivity() {
 				} else {
 					Toast.makeText(this, "Не удалось удалить: ${currentPath}", Toast.LENGTH_SHORT).show()
 				}
+=======
+			for (pathU in paths) {
+				val currentPath = File(pathU)
+				Toast.makeText(this, "Удалось: ${currentPath}", Toast.LENGTH_SHORT).show()
+				FileUtils.cleanDirectory(currentPath)
+>>>>>>> f4ba5a5 (update)
 			}
 		} else {
 			Toast.makeText(this, "Не добавлено ни одной папки.", Toast.LENGTH_SHORT).show()
@@ -64,4 +83,33 @@ public class MainActivity : AppCompatActivity() {
 			startActivity(intent)
 		}
 	}
+<<<<<<< HEAD
+=======
+	
+	fun clearHandler() {
+		val sharedPref = getSharedPreferences("app_settings", Context.MODE_PRIVATE)
+		val startBtn: Button = findViewById(R.id.clearBtn)
+		val paths: MutableList<String> = checkPaths(sharedPref)
+		startBtn.setOnClickListener {
+			if (sharedPref.contains("paths")) {
+				clearDirs(paths)
+			} else {
+				with (sharedPref.edit())
+				{
+					putString("paths", Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString())
+					apply()
+				}
+				clearDirs(sharedPref.getString("paths", "")!!.split(";").toMutableList())
+			}
+		}
+	}
+	
+	fun settingsHandler() {
+		val settingsBtn: Button = findViewById(R.id.settingsBtn)
+		settingsBtn.setOnClickListener {
+			val intent: Intent = Intent(this, SettingsActivity::class.java)
+			startActivity(intent)
+		}
+	}
+>>>>>>> f4ba5a5 (update)
 }

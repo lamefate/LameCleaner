@@ -7,12 +7,15 @@
     tools:context=".MainActivity" >
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ImageView
         android:layout_width="@dimen/anyMainImageSize"
         android:layout_height="@dimen/anyMainImageSize"
         android:layout_centerHorizontal="true"
 		android:layout_centerVertical="true"
 =======
+=======
+>>>>>>> f4ba5a5 (update)
 	<Button
 		android:id="@+id/clearBtn"
 		android:layout_width="wrap_content"
@@ -43,7 +46,10 @@
 		android:layout_marginBottom="10px"
         android:layout_centerHorizontal="true"
 		android:layout_above="@id/clearBtn"
+<<<<<<< HEAD
 >>>>>>> bb05e2e (update)
+=======
+>>>>>>> f4ba5a5 (update)
         android:src="@drawable/icon" />
 		
 	<ImageView

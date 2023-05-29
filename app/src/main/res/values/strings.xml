@@ -2,6 +2,7 @@
     <string name="app_name">Lame Cleaner</string>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	<string name="git_about">developed by lamefate</string>
 >>>>>>> 9938106 (update)
@@ -10,4 +11,10 @@
 	<string name="clear_btn">Очистить</string>
 	<string name="settings_btn">Настройки</string>
 >>>>>>> bb05e2e (update)
+=======
+	<string name="git_about">developed by lamefate</string>
+	<string name="clear_btn">Очистить</string>
+	<string name="settings_btn">Настройки</string>
+	<string name="path_btn">Добавить папку</string>
+>>>>>>> f4ba5a5 (update)
 </resources>

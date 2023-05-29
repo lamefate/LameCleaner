@@ -46,6 +46,7 @@ class AppPermissions(private val context: Context, private val activity: Activit
     		permissions.add(Manifest.permission.MANAGE_EXTERNAL_STORAGE)
 			if (!Environment.isExternalStorageManager()) {
 				try {
+<<<<<<< HEAD
         			val intent: Intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
         			intent.addCategory(Intent.CATEGORY_DEFAULT);
 					intent.data = Uri.parse("package:${context.packageName}")
@@ -53,6 +54,15 @@ class AppPermissions(private val context: Context, private val activity: Activit
 				} catch (e: Exception) {
         			val intent: Intent = Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
         			this.startActivityForResult(intent, requestCodeActivity);
+=======
+					val intent: Intent = Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
+        			intent.addCategory(Intent.CATEGORY_DEFAULT);
+					intent.data = Uri.parse("package:${activity.getPackageName()}")
+        			activity.startActivityForResult(intent, requestCodeActivity);
+				} catch (e: Exception) {
+        			val intent: Intent = Intent(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
+        			activity.startActivityForResult(intent, requestCodeActivity);
+>>>>>>> f4ba5a5 (update)
 				}
 			}
 		} else {
@@ -62,12 +72,21 @@ class AppPermissions(private val context: Context, private val activity: Activit
 	}
 	
 	override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+<<<<<<< HEAD
     	if (requestCode == requestCodeActivity) {
         	if (resultCode != Activity.RESULT_OK) {
             	finishAffinity()
         	}
 		}
     	super.onActivityResult(requestCode, resultCode, data)
+=======
+		if (requestCode == requestCodeActivity) {
+			if (resultCode != Activity.RESULT_OK) {
+				finishAffinity()
+			}
+		}
+		super.onActivityResult(requestCode, resultCode, data)
+>>>>>>> f4ba5a5 (update)
 	}
 	
 	override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {

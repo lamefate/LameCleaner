@@ -34,7 +34,10 @@
     "scope": "compile",
     "versionName": "4.12.0"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f4ba5a5 (update)
   },
   {
     "artifactId": "commons-io",
@@ -42,6 +45,9 @@
     "groupId": "commons-io",
     "scope": "compile",
     "versionName": "2.12.0"
+<<<<<<< HEAD
 >>>>>>> bb05e2e (update)
+=======
+>>>>>>> f4ba5a5 (update)
   }
 ]
