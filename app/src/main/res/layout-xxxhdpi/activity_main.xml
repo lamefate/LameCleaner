@@ -5,12 +5,44 @@
     android:layout_height="match_parent"
     android:background="@drawable/intro"
     tools:context=".MainActivity" >
+<<<<<<< HEAD
+=======
+	
+	<Button
+		android:id="@+id/clearBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:background="@drawable/button_style"
+		android:textSize="@dimen/xxxhdpiWelcomeText"
+		android:textColor="@color/white"
+		android:text="@string/clear_btn"
+	/>
+	
+	<Button
+		android:id="@+id/settingsBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10px"
+		android:background="@drawable/button_style"
+		android:layout_below="@id/clearBtn"
+		android:textSize="@dimen/xxxhdpiWelcomeText"
+		android:textColor="@color/white"
+		android:text="@string/settings_btn"
+	/>
+>>>>>>> bb05e2e (update)
 
     <ImageView
         android:layout_width="@dimen/xxxhdpiMainImageSize"
         android:layout_height="@dimen/xxxhdpiMainImageSize"
         android:layout_centerHorizontal="true"
+<<<<<<< HEAD
 		android:layout_centerVertical="true"
+=======
+		android:layout_marginBottom="10px"
+		android:layout_above="@id/clearBtn"
+>>>>>>> bb05e2e (update)
         android:src="@drawable/icon" />
 		
 	<ImageView

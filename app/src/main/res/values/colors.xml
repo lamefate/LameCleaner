@@ -2,6 +2,10 @@
 <resources>
     <color name="purple_haze">#5B396B</color>
 	<color name="cool_gray">#455A64</color>
+<<<<<<< HEAD
+=======
+	<color name="moody_blue">#7986CB</color>
+>>>>>>> bb05e2e (update)
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
